@@ -1,0 +1,63 @@
+
+
+.navigation {
+	width:968px;
+	height:33px;
+	background-image:url(../images/navi_panel.jpg);
+	background-position:top left;
+	background-repeat:no-repeat;
+	margin-top:6px;
+}
+ul.dropdown {
+ font-size:13px;
+ float:left;
+}
+
+	ul.dropdown li:hover a{
+	 color:#fff !important;
+	 background:#000;
+	}
+
+	ul.dropdown a:link,
+	ul.dropdown a:visited	{ 
+	color: #fff; 
+	text-decoration: none;
+	 background-repeat:no-repeat;
+	 border-right:1px solid #fff;
+	 background-position:right; 
+	 }
+
+	ul.dropdown li a{
+		 display: block;
+		padding: 7px 15px 10px 15px;
+		 font-family:"trebuchet MS";
+		 color:#fff !important;
+		 font-weight:bold;
+		}
+
+ul.dropdown,
+ul.dropdown li,
+ul.dropdown ul {
+ list-style: none;
+}
+
+ul.dropdown li {
+ float: left;
+ vertical-align: middle;
+}
+
+ul.dropdown li.hover,
+ul.dropdown li:hover {
+ position: relative;
+ z-index: 599;
+ cursor: default;
+}
+
+ul.dropdown ul {
+ visibility: hidden;
+ position: absolute;
+ top: 100%;
+ margin-left:0px;
+ z-index: 598;
+ width: auto;
+}

@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteRule ^browse-([0-9]+)-([0-9]+)-([0-9]+)-(.*)$ site_browse_category_detail.php?cat=$1&current_item=$2&current_page=$3
+RewriteRule ^detail-([0-9]+)-(.*)$ site_detail.php?job=$1
+RewriteRule ^print-([0-9]+)-(.*)$ site_detail_print.php?job=$1
+RewriteRule ^share-([0-9]+)-(.*)$ site_detail_share.php?job=$1
+RewriteRule ^map-([0-9]+)-(.*)$ site_company_map.php?company=$1
+RewriteRule ^company-([0-9]+)-([0-9]+)-([0-9]+)-(.*)$ site_company_list.php?company=$1&current_item=$2&current_page=$3
+
+
+RewriteRule ^page-([0-9]+)-(.*)$ site_page.php?page=$1
